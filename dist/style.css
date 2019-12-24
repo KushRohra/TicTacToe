@@ -17,11 +17,6 @@ td
     color: rgba(121,41,101,0.5);
 }
 
-.container
-{
-    background: #333333;
-}
-
 body
 {
     background-color: #abcdea;
@@ -35,13 +30,21 @@ h1
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+p
+{
+    color: #aa145a;
+    text-align: center;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 table
 {
     border-collapse: collapse;
     position: absolute;
     left: 50%;
     margin-left: -155px;
-    top: 100px;
+    top: 150px;
 }
 
 table tr:first-child td

@@ -34,7 +34,7 @@ function turnClick(square)
     if(typeof origBoard[square.target.id] == 'number')
     {
         turn(square.target.id, huPlayer);
-        if(!checkTie())
+        if(!checkWin(origBoard, huPlayer) && !checkTie())
             turn(bestSpot(), aiPlayer);
     }
 }
@@ -74,7 +74,7 @@ function gameOver(gameWon)
     {
         cells[i].removeEventListener('click', turnClick, false);
     }
-    declareWinner(gameWon.player == huPlayer ? "You Win!" : "You Lose");
+    declareWinner(gameWon.player == huPlayer ? "You Win!" : "You Lose!");
 }
 
 function declareWinner(who)
@@ -110,9 +110,9 @@ function checkTie()
 
 function minimax(newBoard, player)
 {
-    var availSpots = emptySquares(newBoard);
+    var availSpots = emptySquares();
 
-    if(checkWin(newBoard, player))
+    if(checkWin(newBoard, huPlayer))
         return {score: -10};
     else if(checkWin(newBoard, aiPlayer))
         return {score: 10};
