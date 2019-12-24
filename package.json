@@ -1,16 +1,24 @@
 {
-  "homepage": "https://github.com/KushRohra/TicTacToe",
-  "name": "tic_tac_toe",
+  "name": "TicTacToe",
   "version": "1.0.0",
   "description": "Unbeatable tic-tac-toe game",
   "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KushRohra/TicTacToe.git"
+  },
   "author": "Kush Rohra",
   "license": "ISC",
-  "dependencies": {
-    "gh-pages": "^2.1.1"
-  }
+  "bugs": {
+    "url": "https://github.com/KushRohra/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/KushRohra/TicTacToe"
 }
